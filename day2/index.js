@@ -35,7 +35,6 @@ fs.readFile('./input.txt', 'utf-8', (err, data) => {
 	};
 
 	instructions.forEach((instruction) => {
-		console.log('aim:', place.aim, 'y', place.y, 'x:', place.x);
 		switch (instruction.direction) {
 			case 'forward':
 				place.y += place.aim * instruction.value;
